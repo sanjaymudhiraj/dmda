@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     health_prediction
+Instances:    50
+Attributes:   6
+              age
+              gender
+              bp
+              cholesterol
+              diabetes
+              heart_disease
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+diabetes = 0
+|   cholesterol = high: 1 (10.0/3.0)
+|   cholesterol = low
+|   |   gender = male
+|   |   |   age <= 57: 0 (2.0)
+|   |   |   age > 57: 1 (2.0)
+|   |   gender = female: 0 (3.0/1.0)
+|   cholesterol = normal
+|   |   bp <= 111: 1 (3.0)
+|   |   bp > 111: 0 (4.0/1.0)
+diabetes = 1
+|   cholesterol = high
+|   |   bp <= 121: 1 (4.0/1.0)
+|   |   bp > 121: 0 (3.0)
+|   cholesterol = low: 0 (9.0/1.0)
+|   cholesterol = normal
+|   |   age <= 44: 0 (3.0)
+|   |   age > 44: 1 (7.0/2.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	19
+
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          41               82      %
+Incorrectly Classified Instances         9               18      %
+Kappa statistic                          0.6411
+Mean absolute error                      0.2634
+Root mean squared error                  0.3629
+Relative absolute error                 52.9992 %
+Root relative squared error             72.8092 %
+Total Number of Instances               50     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.778    0.130    0.875      0.778    0.824      0.646    0.880     0.888     0
+                 0.870    0.222    0.769      0.870    0.816      0.646    0.880     0.828     1
+Weighted Avg.    0.820    0.173    0.826      0.820    0.820      0.646    0.880     0.861     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 21  6 |  a = 0
+  3 20 |  b = 1
+

@@ -1,0 +1,60 @@
+@relation health_prediction
+
+@attribute age numeric
+@attribute gender {male, female}
+@attribute bp numeric
+@attribute cholesterol {high, low, normal}
+@attribute diabetes {0, 1}
+@attribute heart_disease {0, 1}
+
+@data
+30,female,147,normal,0,0
+20,female,120,high,1,1
+58,female,108,low,0,0
+60,male,114,normal,0,0
+77,female,141,normal,1,1
+65,female,97,low,0,0
+58,male,99,high,0,1
+42,male,145,high,1,0
+53,male,175,low,1,1
+80,female,81,high,0,0
+49,male,143,low,0,0
+58,male,174,low,1,0
+60,male,108,high,1,1
+38,female,136,low,1,0
+52,female,147,low,1,0
+68,male,100,low,0,1
+27,male,121,normal,0,1
+61,female,139,high,1,0
+42,female,162,normal,1,0
+30,male,137,normal,0,0
+45,male,90,high,0,1
+52,female,139,low,1,0
+45,female,82,high,1,0
+44,female,104,high,1,1
+50,female,144,low,1,0
+28,male,121,high,0,0
+43,female,117,low,1,0
+34,female,80,low,0,1
+79,female,138,normal,1,0
+19,male,162,normal,1,0
+63,male,133,low,0,1
+61,female,95,normal,1,1
+40,female,170,low,1,0
+56,female,153,high,0,1
+43,male,133,low,1,0
+34,female,104,normal,1,0
+75,female,105,normal,0,1
+49,female,88,normal,0,1
+56,female,170,high,0,1
+60,male,149,normal,1,1
+19,male,111,high,0,1
+47,female,99,normal,1,1
+57,male,110,normal,0,1
+55,male,85,normal,1,1
+52,female,157,normal,1,0
+19,female,139,high,0,1
+36,female,142,high,0,0
+63,female,148,high,1,0
+76,female,169,high,0,1
+52,male,156,low,0,0

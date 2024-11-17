@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     health_prediction
+Instances:    50
+Attributes:   6
+              age
+              gender
+              bp
+              cholesterol
+              diabetes
+              heart_disease
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute             0        1
+                 (0.54)   (0.46)
+=================================
+age
+  mean           47.8088  51.1613
+  std. dev.      14.4283  16.9669
+  weight sum          27       23
+  precision       1.9677   1.9677
+
+gender
+  male              10.0     12.0
+  female            19.0     13.0
+  [total]           29.0     25.0
+
+bp
+  mean           135.057 119.4649
+  std. dev.      24.1081   28.147
+  weight sum          27       23
+  precision       2.4359   2.4359
+
+cholesterol
+  high               8.0     11.0
+  low               13.0      5.0
+  normal             9.0     10.0
+  [total]           30.0     26.0
+
+diabetes
+  0                 11.0     15.0
+  1                 18.0     10.0
+  [total]           29.0     25.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          35               70      %
+Incorrectly Classified Instances        15               30      %
+Kappa statistic                          0.3902
+Mean absolute error                      0.3803
+Root mean squared error                  0.4345
+Relative absolute error                 76.5392 %
+Root relative squared error             87.177  %
+Total Number of Instances               50     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.778    0.391    0.700      0.778    0.737      0.393    0.802     0.848     0
+                 0.609    0.222    0.700      0.609    0.651      0.393    0.802     0.715     1
+Weighted Avg.    0.700    0.314    0.700      0.700    0.697      0.393    0.802     0.787     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 21  6 |  a = 0
+  9 14 |  b = 1
+
